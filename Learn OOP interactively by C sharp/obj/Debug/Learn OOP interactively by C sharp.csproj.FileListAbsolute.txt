@@ -9,3 +9,14 @@ C:\Users\huawei\source\repos\Learn OOP interactively by C sharp\Learn OOP intera
 C:\Users\huawei\source\repos\Learn OOP interactively by C sharp\Learn OOP interactively by C sharp\obj\Debug\Learn OOP interactively by C sharp.exe
 C:\Users\huawei\source\repos\Learn OOP interactively by C sharp\Learn OOP interactively by C sharp\obj\Debug\Learn OOP interactively by C sharp.pdb
 C:\Users\huawei\source\repos\Learn OOP interactively by C sharp\Learn OOP interactively by C sharp\obj\Debug\Learn_OOP_interactively_by_C_sharp.AboutBox_Form.resources
+C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\bin\Debug\Learn OOP interactively by C sharp.exe.config
+C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\bin\Debug\Learn OOP interactively by C sharp.exe
+C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\bin\Debug\Learn OOP interactively by C sharp.pdb
+C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\obj\Debug\Learn OOP interactively by C sharp.csprojAssemblyReference.cache
+C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\obj\Debug\Learn_OOP_interactively_by_C_sharp.AboutBox_Form.resources
+C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\obj\Debug\Learn_OOP_interactively_by_C_sharp.Form_OOP.resources
+C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\obj\Debug\Learn_OOP_interactively_by_C_sharp.Properties.Resources.resources
+C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\obj\Debug\Learn OOP interactively by C sharp.csproj.GenerateResource.cache
+C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\obj\Debug\Learn OOP interactively by C sharp.csproj.CoreCompileInputs.cache
+C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\obj\Debug\Learn OOP interactively by C sharp.exe
+C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\obj\Debug\Learn OOP interactively by C sharp.pdb
