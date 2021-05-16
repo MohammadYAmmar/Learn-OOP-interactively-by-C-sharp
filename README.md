@@ -74,7 +74,7 @@ I've been breaking down tasks while working in the main code and this is what I'
     * Mohammad Yaser Ammar
 
 
-Please do not copy or distribute my code without permission.
+Please do not copy or distribute my code without permission or (mention work in github with Pull Request or question in isssues section in repository) .
 
 [https://github.com/MohammadYAmmar](https://github.com/MohammadYAmmar)
 
