@@ -15,7 +15,7 @@ using Learn_OOP_interactively_by_C_sharp.Enum;
 The start of work on the project on the date of 13/5/2021, on the first day of Eid al-Fitr
 The work by eng. Muhammad Yaser Ammar | https://github.com/MohammadYAmmar/
 
-It took 11 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
+It took 12 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
 
 Versions:
 V1 beta @ 16-5-2021
