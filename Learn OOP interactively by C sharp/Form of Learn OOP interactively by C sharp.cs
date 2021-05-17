@@ -15,12 +15,14 @@ using Learn_OOP_interactively_by_C_sharp.Enum;
 The start of work on the project on the date of 13/5/2021, on the first day of Eid al-Fitr
 The work by eng. Muhammad Yaser Ammar | https://github.com/MohammadYAmmar/
 
-It took 12 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
+It took 12.30 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
 
 Versions:
 V1 beta @ 16-5-2021
+V2 beta @ ??-5-2021 #todo
 
 Tasks:
+V1 beta: 
 - Complementing the infrastructure work of the project ✔
 - Linking checked list box ✔
 - Complete linking codes ✔
@@ -38,11 +40,18 @@ Tasks:
 - Some conditions to select in a checked list box ✔
 - Button of check python if available ✔
 - Program information interface ✔
-- Check todo in the comment ⏳
-- Create new repo to publish ⏳
+- Check todo in the comment ✔
+- Create new repo to publish ✔
+V2 beta: 
+- Implementing the idea of assigning values to the variable based on the authorities ⏳
+- New Form of idea ⏳
+- Push to repo for publish ⏳
+V3 beta: 
+- Create an idea to link and check if public, private, and protected
+- Push to repo for publish 
+- Quiz 
 - Button to close program then window to my account to follow :) 
 - Interface to open the learning program
-- Quiz 
 - Check todo in the comment
 - Logfile records catch exceptions [ New learn and implement ]| improve to CSV
 - Sound if enable or not

@@ -2,6 +2,7 @@
 # Learn OOP interactively by C#
 The idea of the program is to learn Object-oriented programming interactively and at the same time you can see the files and link between them and relationships interactively, the plan for a project contains many advantages, but still in the initial development stage, to follow the program in the latest version.
 
+The reason for this project to prove information while learning to program with objects in an advanced and applied way to some new principles for me, in addition to informing new learners that the program has reached the stage of stability version.
 # Main interface
 
 The program interacts with the user who wants to learn OOP
@@ -34,12 +35,14 @@ I've been breaking down tasks while working in the main code and this is what I'
         The start of work on the project on the date of 13/5/2021, on the first day of Eid al-Fitr
     The work by eng. Muhammad Yaser Ammar | https://github.com/MohammadYAmmar/
     
-    It took 12 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
+    It took 12.30 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
     
     Versions:
     V1 beta @ 16-5-2021
-    
+    V2 beta @ ??-5-2021
+	
     Tasks:
+	
     - Complementing the infrastructure work of the project ✔
     - Linking checked list box ✔
     - Complete linking codes ✔
@@ -57,11 +60,18 @@ I've been breaking down tasks while working in the main code and this is what I'
     - Some conditions to select in a checked list box ✔
     - Button of check python if available ✔
     - Program information interface ✔
-    - Check todo in the comment ⏳
-    - Create new repo to publish ⏳
+    - Check todo in the comment ✔
+    - Create new repo to publish ✔
+	V2 beta: 
+	- Implementing the idea of assigning values to the variable based on the authorities ⏳
+	- New Form of idea ⏳
+	- Push to repo for publish ⏳
+	V3 beta: 
+	- Create an idea to link and check if public, private, and protected
+	- Push to repo for publish 
+	- Quiz 
     - Button to close program then window to my account to follow :) 
     - Interface to open the learning program
-    - Quiz 
     - Check todo in the comment
     - Logfile records catch exceptions [ New learn and implement ]| improve to CSV
     - Sound if enable or not

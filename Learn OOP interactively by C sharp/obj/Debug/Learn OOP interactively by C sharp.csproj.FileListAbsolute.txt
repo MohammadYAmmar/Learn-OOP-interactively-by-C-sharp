@@ -20,3 +20,4 @@ C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP in
 C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\obj\Debug\Learn OOP interactively by C sharp.csproj.CoreCompileInputs.cache
 C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\obj\Debug\Learn OOP interactively by C sharp.exe
 C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\obj\Debug\Learn OOP interactively by C sharp.pdb
+C:\Users\huawei\Documents\GitHub\Learn-OOP-interactively-by-C-sharp\Learn OOP interactively by C sharp\obj\Debug\Learn_OOP_interactively_by_C_sharp.Form_of_set_and_get.resources

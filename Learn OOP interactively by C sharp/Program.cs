@@ -16,11 +16,12 @@ namespace Learn_OOP_interactively_by_C_sharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_OOP());
+            //Application.Run(new Form_OOP());
+            //For fast testing
+            //Application.Run(new Form_of_set_and_get());
+            Application.Run(new Form_of_set_and_get("hello", "hello", "hello", "hello"));
 
 
-            //SUV car = new SUV();
-          
         }
     }
 }

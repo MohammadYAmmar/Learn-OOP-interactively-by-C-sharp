@@ -73,6 +73,12 @@
     <Compile Include="Form of Learn OOP interactively by C sharp.Designer.cs">
       <DependentUpon>Form of Learn OOP interactively by C sharp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form of set and get.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form of set and get.Designer.cs">
+      <DependentUpon>Form of set and get.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interface\Sale.cs" />
     <Compile Include="Interface\Maintenance.cs" />
     <Compile Include="Program.cs" />
@@ -82,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form of Learn OOP interactively by C sharp.resx">
       <DependentUpon>Form of Learn OOP interactively by C sharp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form of set and get.resx">
+      <DependentUpon>Form of set and get.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
