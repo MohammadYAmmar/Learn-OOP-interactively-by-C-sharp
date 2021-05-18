@@ -35,7 +35,7 @@ I've been breaking down tasks while working in the main code and this is what I'
         The start of work on the project on the date of 13/5/2021, on the first day of Eid al-Fitr
     The work by eng. Muhammad Yaser Ammar | https://github.com/MohammadYAmmar/
     
-    It took 12.30 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
+    It took 13.25 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
     
     Versions:
     V1 beta @ 16-5-2021
@@ -64,10 +64,10 @@ I've been breaking down tasks while working in the main code and this is what I'
     - Create new repo to publish ✔
 	V2 beta: 
 	- Implementing the idea of assigning values to the variable based on the authorities ⏳
-	- New Form of idea ⏳
-	- Push to repo for publish ⏳
+	- New Form of idea ✔
+	- Push to repo for publish ✔
 	V3 beta: 
-	- Create an idea to link and check if public, private, and protected
+	- Create an idea to link and check if public, private, and protected ⏳
 	- Push to repo for publish 
 	- Quiz 
     - Button to close program then window to my account to follow :) 

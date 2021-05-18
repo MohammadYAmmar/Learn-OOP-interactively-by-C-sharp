@@ -34,10 +34,9 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.type_class_label = new System.Windows.Forms.Label();
             this.support_interface_label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.class_listView = new System.Windows.Forms.ListView();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.objects_listView = new System.Windows.Forms.ListView();
+            this.class_members_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.Start_simulation_button = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -52,12 +51,16 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.arrow_pictureBox = new System.Windows.Forms.PictureBox();
             this.check_py_button = new System.Windows.Forms.Button();
             this.about_button = new System.Windows.Forms.Button();
+            this.access_modifier_checkedListBox = new System.Windows.Forms.CheckedListBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.error_label = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arrow_pictureBox)).BeginInit();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // name_obj_label
@@ -94,7 +97,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // 
             this.support_interface_label.AutoSize = true;
             this.support_interface_label.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.support_interface_label.Location = new System.Drawing.Point(4, 696);
+            this.support_interface_label.Location = new System.Drawing.Point(4, 460);
             this.support_interface_label.Name = "support_interface_label";
             this.support_interface_label.Size = new System.Drawing.Size(485, 67);
             this.support_interface_label.TabIndex = 7;
@@ -103,77 +106,70 @@ namespace Learn_OOP_interactively_by_C_sharp
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel1.Controls.Add(this.class_listView);
+            this.panel1.Controls.Add(this.access_modifier_checkedListBox);
             this.panel1.Controls.Add(this.label5);
             this.panel1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel1.Location = new System.Drawing.Point(1264, 98);
+            this.panel1.Location = new System.Drawing.Point(1264, 86);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(392, 432);
             this.panel1.TabIndex = 9;
-            // 
-            // class_listView
-            // 
-            this.class_listView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.class_listView.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.class_listView.Location = new System.Drawing.Point(0, 82);
-            this.class_listView.Name = "class_listView";
-            this.class_listView.Size = new System.Drawing.Size(392, 354);
-            this.class_listView.TabIndex = 11;
-            this.class_listView.UseCompatibleStateImageBehavior = false;
-            this.class_listView.View = System.Windows.Forms.View.List;
-            this.class_listView.SelectedIndexChanged += new System.EventHandler(this.class_listView_SelectedIndexChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label5.Location = new System.Drawing.Point(112, 12);
+            this.label5.Location = new System.Drawing.Point(3, 12);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 67);
+            this.label5.Size = new System.Drawing.Size(389, 67);
             this.label5.TabIndex = 11;
-            this.label5.Text = "class";
+            this.label5.Text = "Access modifier";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel2.Controls.Add(this.objects_listView);
+            this.panel2.Controls.Add(this.class_members_checkedListBox);
             this.panel2.Controls.Add(this.label6);
             this.panel2.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel2.Location = new System.Drawing.Point(852, 98);
+            this.panel2.Location = new System.Drawing.Point(852, 86);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(392, 432);
             this.panel2.TabIndex = 10;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // objects_listView
+            // class_members_checkedListBox
             // 
-            this.objects_listView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.objects_listView.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.objects_listView.Location = new System.Drawing.Point(0, 82);
-            this.objects_listView.Name = "objects_listView";
-            this.objects_listView.Size = new System.Drawing.Size(392, 350);
-            this.objects_listView.TabIndex = 12;
-            this.objects_listView.UseCompatibleStateImageBehavior = false;
-            this.objects_listView.View = System.Windows.Forms.View.List;
+            this.class_members_checkedListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.class_members_checkedListBox.CheckOnClick = true;
+            this.class_members_checkedListBox.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.class_members_checkedListBox.FormattingEnabled = true;
+            this.class_members_checkedListBox.Items.AddRange(new object[] {
+            "Car",
+            "Computer"});
+            this.class_members_checkedListBox.Location = new System.Drawing.Point(3, 82);
+            this.class_members_checkedListBox.Name = "class_members_checkedListBox";
+            this.class_members_checkedListBox.Size = new System.Drawing.Size(386, 347);
+            this.class_members_checkedListBox.TabIndex = 17;
+            this.class_members_checkedListBox.SelectedIndexChanged += new System.EventHandler(this.class_members_checkedListBox_SelectedIndexChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label6.Location = new System.Drawing.Point(84, 12);
+            this.label6.Location = new System.Drawing.Point(33, 12);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(198, 67);
+            this.label6.Size = new System.Drawing.Size(356, 67);
             this.label6.TabIndex = 12;
-            this.label6.Text = "objects";
+            this.label6.Text = "Class members";
             // 
             // Start_simulation_button
             // 
             this.Start_simulation_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Start_simulation_button.Font = new System.Drawing.Font("Comic Sans MS", 16F);
-            this.Start_simulation_button.Location = new System.Drawing.Point(460, 861);
+            this.Start_simulation_button.Location = new System.Drawing.Point(12, 555);
             this.Start_simulation_button.Name = "Start_simulation_button";
-            this.Start_simulation_button.Size = new System.Drawing.Size(371, 151);
+            this.Start_simulation_button.Size = new System.Drawing.Size(457, 151);
             this.Start_simulation_button.TabIndex = 11;
             this.Start_simulation_button.Text = "Start simulation";
             this.Start_simulation_button.UseVisualStyleBackColor = false;
@@ -185,7 +181,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.interfaces_listView);
             this.panel3.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel3.Location = new System.Drawing.Point(1676, 98);
+            this.panel3.Location = new System.Drawing.Point(1676, 86);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(392, 432);
             this.panel3.TabIndex = 13;
@@ -197,9 +193,9 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.label7.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label7.Location = new System.Drawing.Point(58, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(262, 67);
+            this.label7.Size = new System.Drawing.Size(312, 67);
             this.label7.TabIndex = 13;
-            this.label7.Text = "interfaces";
+            this.label7.Text = "interfaces??";
             // 
             // interfaces_listView
             // 
@@ -219,9 +215,9 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.panel4.Controls.Add(this.class_label);
             this.panel4.Controls.Add(this.label8);
             this.panel4.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel4.Location = new System.Drawing.Point(852, 550);
+            this.panel4.Location = new System.Drawing.Point(852, 733);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(392, 432);
+            this.panel4.Size = new System.Drawing.Size(392, 249);
             this.panel4.TabIndex = 12;
             // 
             // class_label
@@ -229,7 +225,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.class_label.AutoSize = true;
             this.class_label.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.class_label.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.class_label.Location = new System.Drawing.Point(57, 173);
+            this.class_label.Location = new System.Drawing.Point(33, 128);
             this.class_label.Name = "class_label";
             this.class_label.Size = new System.Drawing.Size(263, 67);
             this.class_label.TabIndex = 12;
@@ -253,9 +249,9 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.panel5.Controls.Add(this.interfaces_label);
             this.panel5.Controls.Add(this.label9);
             this.panel5.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel5.Location = new System.Drawing.Point(1676, 550);
+            this.panel5.Location = new System.Drawing.Point(1676, 733);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(392, 432);
+            this.panel5.Size = new System.Drawing.Size(392, 249);
             this.panel5.TabIndex = 13;
             // 
             // interfaces_label
@@ -263,7 +259,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.interfaces_label.AutoSize = true;
             this.interfaces_label.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.interfaces_label.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.interfaces_label.Location = new System.Drawing.Point(5, 183);
+            this.interfaces_label.Location = new System.Drawing.Point(5, 128);
             this.interfaces_label.Name = "interfaces_label";
             this.interfaces_label.Size = new System.Drawing.Size(387, 67);
             this.interfaces_label.TabIndex = 13;
@@ -283,7 +279,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // 
             // arrow_pictureBox
             // 
-            this.arrow_pictureBox.Location = new System.Drawing.Point(1250, 723);
+            this.arrow_pictureBox.Location = new System.Drawing.Point(1250, 826);
             this.arrow_pictureBox.Name = "arrow_pictureBox";
             this.arrow_pictureBox.Size = new System.Drawing.Size(420, 77);
             this.arrow_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -316,6 +312,41 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.about_button.UseVisualStyleBackColor = false;
             this.about_button.Click += new System.EventHandler(this.about_button_Click);
             // 
+            // access_modifier_checkedListBox
+            // 
+            this.access_modifier_checkedListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.access_modifier_checkedListBox.CheckOnClick = true;
+            this.access_modifier_checkedListBox.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.access_modifier_checkedListBox.FormattingEnabled = true;
+            this.access_modifier_checkedListBox.Items.AddRange(new object[] {
+            "Car",
+            "Computer"});
+            this.access_modifier_checkedListBox.Location = new System.Drawing.Point(3, 82);
+            this.access_modifier_checkedListBox.Name = "access_modifier_checkedListBox";
+            this.access_modifier_checkedListBox.Size = new System.Drawing.Size(386, 347);
+            this.access_modifier_checkedListBox.TabIndex = 18;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel6.Controls.Add(this.error_label);
+            this.panel6.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.panel6.Location = new System.Drawing.Point(849, 534);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1219, 172);
+            this.panel6.TabIndex = 18;
+            // 
+            // error_label
+            // 
+            this.error_label.AutoSize = true;
+            this.error_label.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.error_label.ForeColor = System.Drawing.Color.Blue;
+            this.error_label.Location = new System.Drawing.Point(14, 9);
+            this.error_label.Name = "error_label";
+            this.error_label.Size = new System.Drawing.Size(226, 67);
+            this.error_label.TabIndex = 12;
+            this.error_label.Text = "No error";
+            // 
             // Form_of_set_and_get
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
@@ -323,6 +354,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(2080, 1012);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.about_button);
             this.Controls.Add(this.check_py_button);
             this.Controls.Add(this.arrow_pictureBox);
@@ -337,7 +369,8 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.Controls.Add(this.type_obj_label);
             this.Controls.Add(this.name_obj_label);
             this.Name = "Form_of_set_and_get";
-            this.Text = "Learn OOP interactively by C sharp | By: Eng. Mohammad Yaser Ammar";
+            this.Text = "Learn OOP interactively by C sharp | Access modifier: Set and Get | By: Eng. Moha" +
+    "mmad Yaser Ammar";
             this.Load += new System.EventHandler(this.Form_of_set_and_get_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -350,6 +383,8 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.arrow_pictureBox)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,8 +400,6 @@ namespace Learn_OOP_interactively_by_C_sharp
             private System.Windows.Forms.Label label5;
             private System.Windows.Forms.Panel panel2;
             private System.Windows.Forms.Label label6;
-            private System.Windows.Forms.ListView class_listView;
-            private System.Windows.Forms.ListView objects_listView;
             private System.Windows.Forms.Button Start_simulation_button;
             private System.Windows.Forms.Panel panel3;
             private System.Windows.Forms.ListView interfaces_listView;
@@ -380,6 +413,10 @@ namespace Learn_OOP_interactively_by_C_sharp
             private System.Windows.Forms.Label interfaces_label;
             private System.Windows.Forms.Button check_py_button;
             private System.Windows.Forms.Button about_button;
-        }
+        private System.Windows.Forms.CheckedListBox class_members_checkedListBox;
+        private System.Windows.Forms.CheckedListBox access_modifier_checkedListBox;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label error_label;
+    }
     }
 

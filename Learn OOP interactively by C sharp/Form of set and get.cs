@@ -33,7 +33,8 @@ namespace Learn_OOP_interactively_by_C_sharp
 
         private void Form_of_set_and_get_Load(object sender, EventArgs e)
         {
-
+            //#todo
+            error_label.Text = "error";
         }
         private void check_py_button_Click(object sender, EventArgs e)
         {
@@ -106,12 +107,8 @@ namespace Learn_OOP_interactively_by_C_sharp
             class_label.Visible = false;
             interfaces_label.Visible = false;
             arrow_pictureBox.Visible = false;
-
-
-            
+   
             check_py_button.Visible = true;
-
-
         }
 
         private void class_listView_SelectedIndexChanged(object sender, EventArgs e)
@@ -127,6 +124,53 @@ namespace Learn_OOP_interactively_by_C_sharp
         {
 
         }
-      
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void class_members_checkedListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //MessageBox.Show(object_checkedListBox.CheckedItems[0].ToString(), "object_checkedListBox_SelectedIndexChanged", MessageBoxButtons.OK, MessageBoxIcon.Information);//For debug
+
+            access_modifier_checkedListBox.Items.Clear();
+
+            // Determine if there are any items (objects) checked.  
+            if (class_members_checkedListBox.CheckedItems.Count == 1)
+            {
+                if (class_members_checkedListBox.CheckedItems[0].ToString().Equals("Computer"))
+                {
+                    /*
+                    PC
+                    Laptop
+                    */
+                    access_modifier_checkedListBox.Items.Add("PC");
+                    access_modifier_checkedListBox.Items.Add("Laptop");
+
+                }
+                else if (class_members_checkedListBox.CheckedItems[0].ToString().Equals("Car"))
+                {
+                    /*
+                    Electric car
+                    Gasoline cars
+                    Hybrid cars
+                    */
+                    access_modifier_checkedListBox.Items.Add("Electric car");
+                    access_modifier_checkedListBox.Items.Add("Gasoline car");
+                    access_modifier_checkedListBox.Items.Add("Hybrid car");
+                }
+            }
+            else
+            {
+                //#todo try to decrese codes of add
+                //class_checkedListBox.Items.Clear();
+                access_modifier_checkedListBox.Items.Add("PC");
+                access_modifier_checkedListBox.Items.Add("Laptop");
+                access_modifier_checkedListBox.Items.Add("Electric car");
+                access_modifier_checkedListBox.Items.Add("Gasoline car");
+                access_modifier_checkedListBox.Items.Add("Hybrid car");
+            }
+        }
     }
 }
