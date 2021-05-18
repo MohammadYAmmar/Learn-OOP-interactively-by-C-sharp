@@ -11,27 +11,50 @@ using System.Windows.Forms;
 
 namespace Learn_OOP_interactively_by_C_sharp
 {
-    public partial class Form_of_set_and_get : Form
+    public partial class Form_Access_Modifiers : Form
     {
         //#todo write
-        public Form_of_set_and_get()
+        Object lastObj;
+
+        //#todo write
+        public Form_Access_Modifiers()
         {
             InitializeComponent();
         }
 
+        //#todo test
+        public Form_Access_Modifiers(Object obj, string name_obj)
+        {
+            InitializeComponent();
+            MessageBox.Show(obj.ToString(), "Form_Access_Modifiers test", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            name_obj_label.Text += name_obj;
+
+            lastObj = obj;
+
+        }
         //#todo write
-        public Form_of_set_and_get(string name_obj , string type_obj, string type_class , string support_interfaces)
+        public Form_Access_Modifiers(Object obj,string name_obj, string type_obj, string type_class, string support_interfaces)
+        {
+            InitializeComponent();
+            MessageBox.Show(obj.ToString());
+            name_obj_label.Text += name_obj;
+            type_obj_label.Text += type_obj;
+            type_class_label.Text += type_class;
+            support_interface_label.Text += support_interfaces;
+        }
+
+
+        //#todo write
+        public Form_Access_Modifiers(string name_obj , string type_obj, string type_class , string support_interfaces)
         {
             InitializeComponent();
             name_obj_label.Text += name_obj;
             type_obj_label.Text += type_obj;
             type_class_label.Text += type_class;
             support_interface_label.Text += support_interfaces;
-
-
         }
 
-        private void Form_of_set_and_get_Load(object sender, EventArgs e)
+        private void Form_Access_Modifiers_Load(object sender, EventArgs e)
         {
             //#todo
             error_label.Text = "error";
@@ -109,6 +132,14 @@ namespace Learn_OOP_interactively_by_C_sharp
             arrow_pictureBox.Visible = false;
    
             check_py_button.Visible = true;
+
+            //#todo test
+            Laptop obj =  (Laptop)lastObj;
+            //obj.get_name();
+            info_label.Text = obj.get_name();
+
+
+
         }
 
         private void class_listView_SelectedIndexChanged(object sender, EventArgs e)
@@ -172,5 +203,7 @@ namespace Learn_OOP_interactively_by_C_sharp
                 access_modifier_checkedListBox.Items.Add("Hybrid car");
             }
         }
+
+
     }
 }

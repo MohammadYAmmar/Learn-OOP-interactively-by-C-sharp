@@ -28,5 +28,10 @@ namespace Learn_OOP_interactively_by_C_sharp
         abstract public double sellingPrice();
 
         abstract public DateTime warrantyDate();
+
+        public string get_name()
+        {
+            return name;
+        }
     }
 }

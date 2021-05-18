@@ -57,6 +57,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.arrow_pictureBox = new System.Windows.Forms.PictureBox();
             this.check_py_button = new System.Windows.Forms.Button();
             this.about_button = new System.Windows.Forms.Button();
+            this.Access_Modifiers_button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -69,7 +70,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(4, 86);
+            this.label1.Location = new System.Drawing.Point(4, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(392, 67);
             this.label1.TabIndex = 0;
@@ -79,7 +80,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 213);
+            this.label2.Location = new System.Drawing.Point(4, 181);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(376, 67);
             this.label2.TabIndex = 1;
@@ -88,7 +89,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // name_obj_textBox
             // 
             this.name_obj_textBox.Font = new System.Drawing.Font("Comic Sans MS", 16F);
-            this.name_obj_textBox.Location = new System.Drawing.Point(460, 89);
+            this.name_obj_textBox.Location = new System.Drawing.Point(460, 57);
             this.name_obj_textBox.Name = "name_obj_textBox";
             this.name_obj_textBox.Size = new System.Drawing.Size(364, 67);
             this.name_obj_textBox.TabIndex = 2;
@@ -102,7 +103,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.object_checkedListBox.Items.AddRange(new object[] {
             "Car",
             "Computer"});
-            this.object_checkedListBox.Location = new System.Drawing.Point(460, 213);
+            this.object_checkedListBox.Location = new System.Drawing.Point(460, 181);
             this.object_checkedListBox.Name = "object_checkedListBox";
             this.object_checkedListBox.Size = new System.Drawing.Size(371, 151);
             this.object_checkedListBox.TabIndex = 4;
@@ -118,7 +119,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             "Electric car",
             "Gasoline cars",
             "Hybrid cars"});
-            this.class_checkedListBox.Location = new System.Drawing.Point(460, 372);
+            this.class_checkedListBox.Location = new System.Drawing.Point(460, 340);
             this.class_checkedListBox.Name = "class_checkedListBox";
             this.class_checkedListBox.Size = new System.Drawing.Size(371, 298);
             this.class_checkedListBox.TabIndex = 6;
@@ -127,7 +128,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(4, 372);
+            this.label3.Location = new System.Drawing.Point(4, 340);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(339, 67);
             this.label3.TabIndex = 5;
@@ -140,7 +141,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.interface_checkedListBox.Items.AddRange(new object[] {
             "Sale",
             "Maintenance"});
-            this.interface_checkedListBox.Location = new System.Drawing.Point(460, 696);
+            this.interface_checkedListBox.Location = new System.Drawing.Point(460, 664);
             this.interface_checkedListBox.Name = "interface_checkedListBox";
             this.interface_checkedListBox.Size = new System.Drawing.Size(371, 151);
             this.interface_checkedListBox.TabIndex = 8;
@@ -149,7 +150,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(4, 696);
+            this.label4.Location = new System.Drawing.Point(4, 664);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(471, 67);
             this.label4.TabIndex = 7;
@@ -161,7 +162,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.panel1.Controls.Add(this.class_listView);
             this.panel1.Controls.Add(this.label5);
             this.panel1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel1.Location = new System.Drawing.Point(1264, 98);
+            this.panel1.Location = new System.Drawing.Point(1264, 66);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(392, 432);
             this.panel1.TabIndex = 9;
@@ -170,7 +171,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // 
             this.class_listView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.class_listView.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.class_listView.Location = new System.Drawing.Point(0, 82);
+            this.class_listView.Location = new System.Drawing.Point(0, 72);
             this.class_listView.Name = "class_listView";
             this.class_listView.Size = new System.Drawing.Size(392, 354);
             this.class_listView.TabIndex = 11;
@@ -183,7 +184,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label5.Location = new System.Drawing.Point(112, 12);
+            this.label5.Location = new System.Drawing.Point(112, 2);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(138, 67);
             this.label5.TabIndex = 11;
@@ -195,7 +196,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.panel2.Controls.Add(this.objects_listView);
             this.panel2.Controls.Add(this.label6);
             this.panel2.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel2.Location = new System.Drawing.Point(852, 98);
+            this.panel2.Location = new System.Drawing.Point(852, 66);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(392, 432);
             this.panel2.TabIndex = 10;
@@ -204,7 +205,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // 
             this.objects_listView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.objects_listView.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.objects_listView.Location = new System.Drawing.Point(0, 82);
+            this.objects_listView.Location = new System.Drawing.Point(0, 72);
             this.objects_listView.Name = "objects_listView";
             this.objects_listView.Size = new System.Drawing.Size(392, 350);
             this.objects_listView.TabIndex = 12;
@@ -216,7 +217,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label6.Location = new System.Drawing.Point(84, 12);
+            this.label6.Location = new System.Drawing.Point(84, 2);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(198, 67);
             this.label6.TabIndex = 12;
@@ -226,7 +227,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // 
             this.Start_simulation_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Start_simulation_button.Font = new System.Drawing.Font("Comic Sans MS", 16F);
-            this.Start_simulation_button.Location = new System.Drawing.Point(460, 861);
+            this.Start_simulation_button.Location = new System.Drawing.Point(460, 829);
             this.Start_simulation_button.Name = "Start_simulation_button";
             this.Start_simulation_button.Size = new System.Drawing.Size(371, 151);
             this.Start_simulation_button.TabIndex = 11;
@@ -240,7 +241,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.interfaces_listView);
             this.panel3.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel3.Location = new System.Drawing.Point(1676, 98);
+            this.panel3.Location = new System.Drawing.Point(1676, 66);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(392, 432);
             this.panel3.TabIndex = 13;
@@ -250,7 +251,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.MediumVioletRed;
-            this.label7.Location = new System.Drawing.Point(58, 12);
+            this.label7.Location = new System.Drawing.Point(58, 2);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(262, 67);
             this.label7.TabIndex = 13;
@@ -260,7 +261,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // 
             this.interfaces_listView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.interfaces_listView.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.interfaces_listView.Location = new System.Drawing.Point(0, 82);
+            this.interfaces_listView.Location = new System.Drawing.Point(0, 72);
             this.interfaces_listView.Name = "interfaces_listView";
             this.interfaces_listView.Size = new System.Drawing.Size(392, 350);
             this.interfaces_listView.TabIndex = 12;
@@ -274,7 +275,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.panel4.Controls.Add(this.class_label);
             this.panel4.Controls.Add(this.label8);
             this.panel4.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel4.Location = new System.Drawing.Point(852, 550);
+            this.panel4.Location = new System.Drawing.Point(852, 518);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(392, 432);
             this.panel4.TabIndex = 12;
@@ -284,7 +285,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.class_label.AutoSize = true;
             this.class_label.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.class_label.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.class_label.Location = new System.Drawing.Point(57, 173);
+            this.class_label.Location = new System.Drawing.Point(57, 163);
             this.class_label.Name = "class_label";
             this.class_label.Size = new System.Drawing.Size(263, 67);
             this.class_label.TabIndex = 12;
@@ -296,7 +297,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Blue;
-            this.label8.Location = new System.Drawing.Point(112, 12);
+            this.label8.Location = new System.Drawing.Point(112, 2);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(138, 67);
             this.label8.TabIndex = 11;
@@ -308,7 +309,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.panel5.Controls.Add(this.interfaces_label);
             this.panel5.Controls.Add(this.label9);
             this.panel5.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.panel5.Location = new System.Drawing.Point(1676, 550);
+            this.panel5.Location = new System.Drawing.Point(1676, 518);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(392, 432);
             this.panel5.TabIndex = 13;
@@ -318,7 +319,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.interfaces_label.AutoSize = true;
             this.interfaces_label.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.interfaces_label.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.interfaces_label.Location = new System.Drawing.Point(5, 183);
+            this.interfaces_label.Location = new System.Drawing.Point(5, 173);
             this.interfaces_label.Name = "interfaces_label";
             this.interfaces_label.Size = new System.Drawing.Size(387, 67);
             this.interfaces_label.TabIndex = 13;
@@ -330,7 +331,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Blue;
-            this.label9.Location = new System.Drawing.Point(58, 12);
+            this.label9.Location = new System.Drawing.Point(58, 2);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(262, 67);
             this.label9.TabIndex = 11;
@@ -339,7 +340,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // arrow_pictureBox
             // 
             this.arrow_pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("arrow_pictureBox.Image")));
-            this.arrow_pictureBox.Location = new System.Drawing.Point(1250, 723);
+            this.arrow_pictureBox.Location = new System.Drawing.Point(1250, 691);
             this.arrow_pictureBox.Name = "arrow_pictureBox";
             this.arrow_pictureBox.Size = new System.Drawing.Size(420, 77);
             this.arrow_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -351,7 +352,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // 
             this.check_py_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.check_py_button.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.check_py_button.Location = new System.Drawing.Point(1, 889);
+            this.check_py_button.Location = new System.Drawing.Point(1, 857);
             this.check_py_button.Name = "check_py_button";
             this.check_py_button.Size = new System.Drawing.Size(291, 123);
             this.check_py_button.TabIndex = 15;
@@ -364,13 +365,25 @@ namespace Learn_OOP_interactively_by_C_sharp
             // 
             this.about_button.BackColor = System.Drawing.Color.DarkOrange;
             this.about_button.Font = new System.Drawing.Font("Comic Sans MS", 8F);
-            this.about_button.Location = new System.Drawing.Point(1874, 12);
+            this.about_button.Location = new System.Drawing.Point(1874, 956);
             this.about_button.Name = "about_button";
             this.about_button.Size = new System.Drawing.Size(194, 58);
             this.about_button.TabIndex = 16;
             this.about_button.Text = "About program";
             this.about_button.UseVisualStyleBackColor = false;
             this.about_button.Click += new System.EventHandler(this.about_button_Click);
+            // 
+            // Access_Modifiers_button
+            // 
+            this.Access_Modifiers_button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Access_Modifiers_button.Font = new System.Drawing.Font("Comic Sans MS", 16F);
+            this.Access_Modifiers_button.Location = new System.Drawing.Point(1264, 799);
+            this.Access_Modifiers_button.Name = "Access_Modifiers_button";
+            this.Access_Modifiers_button.Size = new System.Drawing.Size(371, 151);
+            this.Access_Modifiers_button.TabIndex = 17;
+            this.Access_Modifiers_button.Text = "Beta:Access Modifiers";
+            this.Access_Modifiers_button.UseVisualStyleBackColor = false;
+            this.Access_Modifiers_button.Click += new System.EventHandler(this.Access_Modifiers_button_Click);
             // 
             // Form_OOP
             // 
@@ -379,6 +392,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(2080, 1012);
+            this.Controls.Add(this.Access_Modifiers_button);
             this.Controls.Add(this.about_button);
             this.Controls.Add(this.check_py_button);
             this.Controls.Add(this.arrow_pictureBox);
@@ -444,6 +458,7 @@ namespace Learn_OOP_interactively_by_C_sharp
         private System.Windows.Forms.Label interfaces_label;
         private System.Windows.Forms.Button check_py_button;
         private System.Windows.Forms.Button about_button;
+        private System.Windows.Forms.Button Access_Modifiers_button;
     }
 }
 

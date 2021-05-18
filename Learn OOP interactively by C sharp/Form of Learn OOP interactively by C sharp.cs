@@ -15,7 +15,7 @@ using Learn_OOP_interactively_by_C_sharp.Enum;
 The start of work on the project on the date of 13/5/2021, on the first day of Eid al-Fitr
 The work by eng. Muhammad Yaser Ammar | https://github.com/MohammadYAmmar/
 
-It took 13.25 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
+It took 14.25 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
 
 Versions:
 V1 beta @ 16-5-2021
@@ -63,6 +63,9 @@ namespace Learn_OOP_interactively_by_C_sharp
 {
     public partial class Form_OOP : Form
     {
+        //#todo wirte
+        //#todo complete work
+        Object lastObj;
         public Form_OOP()
         {
             InitializeComponent();
@@ -271,6 +274,9 @@ namespace Learn_OOP_interactively_by_C_sharp
                 {
                     //MessageBox.Show(Obj + " " + Type + " " + Class + " " + Interfaces);
                     Laptop obj = new Laptop();
+
+                    //#todo complete work to all
+                    lastObj = obj;
                 }
                 //MessageBox.Show(Obj + " " + Type + " " + Class + " " + Interfaces);
             }
@@ -278,6 +284,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             {
                 //#todo complete
                 //MessageBox.Show(Obj + " " + Type + " " + Class + " " + Interfaces);
+
             }
         }
 
@@ -294,7 +301,7 @@ namespace Learn_OOP_interactively_by_C_sharp
 //#todo complete
         private void object_checkedListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // class_checkedListBox.Items.Clear();
+            class_checkedListBox.Items.Clear();
             //MessageBox.Show(object_checkedListBox.CheckedItems[0].ToString(), "object_checkedListBox_SelectedIndexChanged", MessageBoxButtons.OK, MessageBoxIcon.Information);//For debug
 
             // Determine if there are any items (objects) checked.  
@@ -302,40 +309,40 @@ namespace Learn_OOP_interactively_by_C_sharp
             {
                 //object_checkedListBox.CheckedItems[0]
             }
-            //    if (object_checkedListBox.CheckedItems[0].ToString().Equals("Computer"))
-            //    {
-            //        /*
-            //        PC
-            //        Laptop
-            //        */
-            //        class_checkedListBox.Items.Add("PC");
-            //        class_checkedListBox.Items.Add("Laptop");
+            if (object_checkedListBox.CheckedItems[0].ToString().Equals("Computer"))
+            {
+                /*
+                PC
+                Laptop
+                */
+                class_checkedListBox.Items.Add("PC");
+                class_checkedListBox.Items.Add("Laptop");
 
-            //    }
-            //    else if (object_checkedListBox.CheckedItems[0].ToString().Equals("Car"))
-            //    {
-            //        /*
-            //        Electric car
-            //        Gasoline cars
-            //        Hybrid cars
-            //        */
-            //        class_checkedListBox.Items.Add("Electric car");
-            //        class_checkedListBox.Items.Add("Gasoline car");
-            //        class_checkedListBox.Items.Add("Hybrid car");
-            //    }
-            //}
-            //else
-            //{
-            //    //#todo try to decrese codes of add
-            //    //class_checkedListBox.Items.Clear();
-            //    class_checkedListBox.Items.Add("PC");
-            //    class_checkedListBox.Items.Add("Laptop");
-            //    class_checkedListBox.Items.Add("Electric car");
-            //    class_checkedListBox.Items.Add("Gasoline car");
-            //    class_checkedListBox.Items.Add("Hybrid car");
-            //}
+            }
+            else if (object_checkedListBox.CheckedItems[0].ToString().Equals("Car"))
+            {
+                /*
+                Electric car
+                Gasoline cars
+                Hybrid cars
+                */
+                class_checkedListBox.Items.Add("Electric car");
+                class_checkedListBox.Items.Add("Gasoline car");
+                class_checkedListBox.Items.Add("Hybrid car");
+            }
+        
+            else
+            {
+                //#todo try to decrese codes of add
+                //class_checkedListBox.Items.Clear();
+                class_checkedListBox.Items.Add("PC");
+                class_checkedListBox.Items.Add("Laptop");
+                class_checkedListBox.Items.Add("Electric car");
+                class_checkedListBox.Items.Add("Gasoline car");
+                class_checkedListBox.Items.Add("Hybrid car");
+            }
 
-        }
+}
 
         private void check_py_button_Click(object sender, EventArgs e)
         {
@@ -408,5 +415,11 @@ namespace Learn_OOP_interactively_by_C_sharp
 
         }
 
+        private void Access_Modifiers_button_Click(object sender, EventArgs e)
+        {
+            //string name_obj, string type_obj, string type_class, string support_interfaces
+            Form_Access_Modifiers window = new Form_Access_Modifiers(lastObj , name_obj_textBox.Text);
+            window.Show();
+        }
     }
 }
