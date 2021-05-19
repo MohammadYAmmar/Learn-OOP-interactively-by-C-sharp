@@ -35,7 +35,7 @@ I've been breaking down tasks while working in the main code and this is what I'
         The start of work on the project on the date of 13/5/2021, on the first day of Eid al-Fitr
     The work by eng. Muhammad Yaser Ammar | https://github.com/MohammadYAmmar/
     
-    It took 13.25 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
+    It took 15 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
     
     Versions:
     V1 beta @ 16-5-2021
@@ -68,6 +68,7 @@ I've been breaking down tasks while working in the main code and this is what I'
 	- Push to repo for publish ✔
 	V3 beta: 
 	- Create an idea to link and check if public, private, and protected ⏳
+	- Button to move to another form, and change in program files
 	- Push to repo for publish 
 	- Quiz 
     - Button to close program then window to my account to follow :) 
@@ -75,6 +76,8 @@ I've been breaking down tasks while working in the main code and this is what I'
     - Check todo in the comment
     - Logfile records catch exceptions [ New learn and implement ]| improve to CSV
     - Sound if enable or not
+	- Design UX for the program [ After reading book 📕 ]
+
 
 
 

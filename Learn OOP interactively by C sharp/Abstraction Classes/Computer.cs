@@ -29,9 +29,14 @@ namespace Learn_OOP_interactively_by_C_sharp
 
         abstract public DateTime warrantyDate();
 
+        public void set_name(string name)
+        {
+            this.name = name;
+        }
         public string get_name()
         {
             return name;
         }
+
     }
 }

@@ -56,6 +56,8 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.error_label = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.info_label = new System.Windows.Forms.Label();
+            this.Property_checkedListBox = new System.Windows.Forms.CheckedListBox();
+            this.set_to_obj_textBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -197,6 +199,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel3.Controls.Add(this.Property_checkedListBox);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.interfaces_listView);
             this.panel3.ForeColor = System.Drawing.Color.CornflowerBlue;
@@ -212,9 +215,9 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.label7.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.label7.Location = new System.Drawing.Point(58, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(312, 67);
+            this.label7.Size = new System.Drawing.Size(225, 67);
             this.label7.TabIndex = 13;
-            this.label7.Text = "interfaces??";
+            this.label7.Text = "Property";
             // 
             // interfaces_listView
             // 
@@ -355,6 +358,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel7.Controls.Add(this.set_to_obj_textBox);
             this.panel7.Controls.Add(this.info_label);
             this.panel7.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.panel7.Location = new System.Drawing.Point(12, 534);
@@ -372,6 +376,30 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.info_label.Size = new System.Drawing.Size(629, 49);
             this.info_label.TabIndex = 20;
             this.info_label.Text = "Waiting for the user to fill the boxes";
+            // 
+            // Property_checkedListBox
+            // 
+            this.Property_checkedListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Property_checkedListBox.CheckOnClick = true;
+            this.Property_checkedListBox.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.Property_checkedListBox.FormattingEnabled = true;
+            this.Property_checkedListBox.Items.AddRange(new object[] {
+            "Set",
+            "Get"});
+            this.Property_checkedListBox.Location = new System.Drawing.Point(3, 82);
+            this.Property_checkedListBox.Name = "Property_checkedListBox";
+            this.Property_checkedListBox.Size = new System.Drawing.Size(386, 347);
+            this.Property_checkedListBox.TabIndex = 18;
+            this.Property_checkedListBox.SelectedIndexChanged += new System.EventHandler(this.Property_checkedListBox_SelectedIndexChanged);
+            // 
+            // set_to_obj_textBox
+            // 
+            this.set_to_obj_textBox.Font = new System.Drawing.Font("Comic Sans MS", 16F);
+            this.set_to_obj_textBox.Location = new System.Drawing.Point(24, 86);
+            this.set_to_obj_textBox.Name = "set_to_obj_textBox";
+            this.set_to_obj_textBox.Size = new System.Drawing.Size(364, 67);
+            this.set_to_obj_textBox.TabIndex = 20;
+            this.set_to_obj_textBox.Visible = false;
             // 
             // Form_Access_Modifiers
             // 
@@ -448,6 +476,8 @@ namespace Learn_OOP_interactively_by_C_sharp
         private System.Windows.Forms.Label error_label;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label info_label;
+        private System.Windows.Forms.CheckedListBox Property_checkedListBox;
+        private System.Windows.Forms.TextBox set_to_obj_textBox;
     }
     }
 

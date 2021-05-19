@@ -15,6 +15,7 @@ namespace Learn_OOP_interactively_by_C_sharp
     {
         //#todo write
         Object lastObj;
+        Laptop laptopObj;
 
         //#todo write
         public Form_Access_Modifiers()
@@ -26,17 +27,17 @@ namespace Learn_OOP_interactively_by_C_sharp
         public Form_Access_Modifiers(Object obj, string name_obj)
         {
             InitializeComponent();
-            MessageBox.Show(obj.ToString(), "Form_Access_Modifiers test", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            // MessageBox.Show(obj.ToString(), "Form_Access_Modifiers test", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             name_obj_label.Text += name_obj;
 
             lastObj = obj;
 
         }
         //#todo write
-        public Form_Access_Modifiers(Object obj,string name_obj, string type_obj, string type_class, string support_interfaces)
+        public Form_Access_Modifiers(Object obj, string name_obj, string type_obj, string type_class, string support_interfaces)
         {
             InitializeComponent();
-            MessageBox.Show(obj.ToString());
+            //MessageBox.Show(obj.ToString());
             name_obj_label.Text += name_obj;
             type_obj_label.Text += type_obj;
             type_class_label.Text += type_class;
@@ -45,7 +46,7 @@ namespace Learn_OOP_interactively_by_C_sharp
 
 
         //#todo write
-        public Form_Access_Modifiers(string name_obj , string type_obj, string type_class , string support_interfaces)
+        public Form_Access_Modifiers(string name_obj, string type_obj, string type_class, string support_interfaces)
         {
             InitializeComponent();
             name_obj_label.Text += name_obj;
@@ -130,13 +131,13 @@ namespace Learn_OOP_interactively_by_C_sharp
             class_label.Visible = false;
             interfaces_label.Visible = false;
             arrow_pictureBox.Visible = false;
-   
+
             check_py_button.Visible = true;
 
             //#todo test
-            Laptop obj =  (Laptop)lastObj;
+            laptopObj = (Laptop)lastObj;
             //obj.get_name();
-            info_label.Text = obj.get_name();
+            info_label.Text = laptopObj.get_name();
 
 
 
@@ -204,6 +205,34 @@ namespace Learn_OOP_interactively_by_C_sharp
             }
         }
 
+        private void Property_checkedListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                // Determine if there are any items (objects) checked.  
+                if (Property_checkedListBox.CheckedItems.Count == 1)
+                {
+                    if (Property_checkedListBox.CheckedItems[0].ToString().Equals("Set"))
+                    {
+                        info_label.Text = "Please enter the value to set: ";
+                        set_to_obj_textBox.Visible = true;
+                         laptopObj.set_name(set_to_obj_textBox.Text);
+                        //laptopObj.set_name("Hello world");
+                    }
+                    else if (Property_checkedListBox.CheckedItems[0].ToString().Equals("Get"))
+                    {
+                        info_label.Text = laptopObj.get_name();
+                        set_to_obj_textBox.Visible = false;
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Property_checkedListBox_SelectedIndexChanged", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
 
     }
 }
