@@ -35,7 +35,7 @@ I've been breaking down tasks while working in the main code and this is what I'
         The start of work on the project on the date of 13/5/2021, on the first day of Eid al-Fitr
     The work by eng. Muhammad Yaser Ammar | https://github.com/MohammadYAmmar/
     
-    It took 15 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
+    It took 15.20 hours to work, depending on the app Forest - (Stay focused, be present) 🌲 #todo update time
     
     Versions:
     V1 beta @ 16-5-2021

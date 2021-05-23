@@ -41,6 +41,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.label6 = new System.Windows.Forms.Label();
             this.Start_simulation_button = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.Property_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.interfaces_listView = new System.Windows.Forms.ListView();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -55,9 +56,9 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.panel6 = new System.Windows.Forms.Panel();
             this.error_label = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.info_label = new System.Windows.Forms.Label();
-            this.Property_checkedListBox = new System.Windows.Forms.CheckedListBox();
+            this.set_button = new System.Windows.Forms.Button();
             this.set_to_obj_textBox = new System.Windows.Forms.TextBox();
+            this.info_label = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -207,6 +208,21 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(392, 432);
             this.panel3.TabIndex = 13;
+            // 
+            // Property_checkedListBox
+            // 
+            this.Property_checkedListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Property_checkedListBox.CheckOnClick = true;
+            this.Property_checkedListBox.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.Property_checkedListBox.FormattingEnabled = true;
+            this.Property_checkedListBox.Items.AddRange(new object[] {
+            "Set",
+            "Get"});
+            this.Property_checkedListBox.Location = new System.Drawing.Point(3, 82);
+            this.Property_checkedListBox.Name = "Property_checkedListBox";
+            this.Property_checkedListBox.Size = new System.Drawing.Size(386, 347);
+            this.Property_checkedListBox.TabIndex = 18;
+            this.Property_checkedListBox.SelectedIndexChanged += new System.EventHandler(this.Property_checkedListBox_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -358,6 +374,7 @@ namespace Learn_OOP_interactively_by_C_sharp
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.panel7.Controls.Add(this.set_button);
             this.panel7.Controls.Add(this.set_to_obj_textBox);
             this.panel7.Controls.Add(this.info_label);
             this.panel7.ForeColor = System.Drawing.Color.CornflowerBlue;
@@ -365,6 +382,28 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(683, 172);
             this.panel7.TabIndex = 19;
+            // 
+            // set_button
+            // 
+            this.set_button.BackColor = System.Drawing.Color.Black;
+            this.set_button.Font = new System.Drawing.Font("Comic Sans MS", 16F);
+            this.set_button.ForeColor = System.Drawing.Color.Azure;
+            this.set_button.Location = new System.Drawing.Point(464, 86);
+            this.set_button.Name = "set_button";
+            this.set_button.Size = new System.Drawing.Size(141, 83);
+            this.set_button.TabIndex = 20;
+            this.set_button.Text = "Set";
+            this.set_button.UseVisualStyleBackColor = false;
+            this.set_button.Click += new System.EventHandler(this.set_button_Click);
+            // 
+            // set_to_obj_textBox
+            // 
+            this.set_to_obj_textBox.Font = new System.Drawing.Font("Comic Sans MS", 16F);
+            this.set_to_obj_textBox.Location = new System.Drawing.Point(24, 86);
+            this.set_to_obj_textBox.Name = "set_to_obj_textBox";
+            this.set_to_obj_textBox.Size = new System.Drawing.Size(364, 67);
+            this.set_to_obj_textBox.TabIndex = 20;
+            this.set_to_obj_textBox.Visible = false;
             // 
             // info_label
             // 
@@ -376,30 +415,6 @@ namespace Learn_OOP_interactively_by_C_sharp
             this.info_label.Size = new System.Drawing.Size(629, 49);
             this.info_label.TabIndex = 20;
             this.info_label.Text = "Waiting for the user to fill the boxes";
-            // 
-            // Property_checkedListBox
-            // 
-            this.Property_checkedListBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Property_checkedListBox.CheckOnClick = true;
-            this.Property_checkedListBox.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.Property_checkedListBox.FormattingEnabled = true;
-            this.Property_checkedListBox.Items.AddRange(new object[] {
-            "Set",
-            "Get"});
-            this.Property_checkedListBox.Location = new System.Drawing.Point(3, 82);
-            this.Property_checkedListBox.Name = "Property_checkedListBox";
-            this.Property_checkedListBox.Size = new System.Drawing.Size(386, 347);
-            this.Property_checkedListBox.TabIndex = 18;
-            this.Property_checkedListBox.SelectedIndexChanged += new System.EventHandler(this.Property_checkedListBox_SelectedIndexChanged);
-            // 
-            // set_to_obj_textBox
-            // 
-            this.set_to_obj_textBox.Font = new System.Drawing.Font("Comic Sans MS", 16F);
-            this.set_to_obj_textBox.Location = new System.Drawing.Point(24, 86);
-            this.set_to_obj_textBox.Name = "set_to_obj_textBox";
-            this.set_to_obj_textBox.Size = new System.Drawing.Size(364, 67);
-            this.set_to_obj_textBox.TabIndex = 20;
-            this.set_to_obj_textBox.Visible = false;
             // 
             // Form_Access_Modifiers
             // 
@@ -478,6 +493,7 @@ namespace Learn_OOP_interactively_by_C_sharp
         private System.Windows.Forms.Label info_label;
         private System.Windows.Forms.CheckedListBox Property_checkedListBox;
         private System.Windows.Forms.TextBox set_to_obj_textBox;
+        private System.Windows.Forms.Button set_button;
     }
     }
 

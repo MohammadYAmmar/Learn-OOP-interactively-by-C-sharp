@@ -59,6 +59,13 @@ namespace Learn_OOP_interactively_by_C_sharp
         {
             //#todo
             error_label.Text = "error";
+            set_button.Visible = false;
+
+            //#todo test
+            laptopObj = (Laptop)lastObj;
+            //obj.get_name();
+            info_label.Text = laptopObj.get_name();
+
         }
         private void check_py_button_Click(object sender, EventArgs e)
         {
@@ -216,16 +223,29 @@ namespace Learn_OOP_interactively_by_C_sharp
                     {
                         info_label.Text = "Please enter the value to set: ";
                         set_to_obj_textBox.Visible = true;
+                        set_button.Visible = true;
                          laptopObj.set_name(set_to_obj_textBox.Text);
+
+                      //  Property_checkedListBox.
                         //laptopObj.set_name("Hello world");
                     }
                     else if (Property_checkedListBox.CheckedItems[0].ToString().Equals("Get"))
                     {
                         info_label.Text = laptopObj.get_name();
                         set_to_obj_textBox.Visible = false;
+                        set_button.Visible = false;
+
 
                     }
                 }
+
+
+                //#todo             
+                Property_checkedListBox.Items.Clear();
+                Property_checkedListBox.Items.Add("Set");
+                Property_checkedListBox.Items.Add("Get");
+
+
             }
             catch (Exception ex)
             {
@@ -234,5 +254,11 @@ namespace Learn_OOP_interactively_by_C_sharp
             }
         }
 
+        private void set_button_Click(object sender, EventArgs e)
+        {
+            //info_label.Text = "Please enter the value to set: ";
+            //set_to_obj_textBox.Visible = true;
+            laptopObj.set_name(set_to_obj_textBox.Text);
+        }
     }
 }
